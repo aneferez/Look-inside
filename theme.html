@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern HTML CSS Inspector</title>
+  <title>CodeLens HTML</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -19,145 +19,547 @@
   <input type="radio" name="page" id="tablePage" hidden>
   <input type="radio" name="page" id="aboutPage" hidden>
 
-  <div class="app inspectable" data-tag="div" data-css-class="app">
+  <div 
+    class="app inspectable" 
+    data-tag="div" 
+    data-css-class="app"
+    data-category="Application Layout"
+    data-related-css="app,layout,content,page,inspector,footer"
+  >
 
-    <header class="header inspectable" data-tag="header" data-css-class="header">
-      <nav class="navbar inspectable" data-tag="nav" data-css-class="navbar">
+    <header 
+      class="header inspectable" 
+      data-tag="header" 
+      data-css-class="header"
+      data-category="Header Component"
+      data-related-css="header,navbar,logo,nav-links,theme-switcher"
+    >
 
-        <h2 class="logo inspectable" data-tag="h2" data-css-class="logo">WebInspect</h2>
+      <nav 
+        class="navbar inspectable" 
+        data-tag="nav" 
+        data-css-class="navbar"
+        data-category="Navigation Component"
+        data-related-css="header,navbar,logo,nav-links,theme-switcher"
+      >
 
-        <div class="nav-links inspectable" data-tag="div" data-css-class="nav-links">
-          <label for="homePage" class="inspectable" data-tag="label" data-css-class="nav-links">Home</label>
-          <label for="formPage" class="inspectable" data-tag="label" data-css-class="nav-links">Form</label>
-          <label for="tablePage" class="inspectable" data-tag="label" data-css-class="nav-links">Table</label>
-          <label for="aboutPage" class="inspectable" data-tag="label" data-css-class="nav-links">About CSS</label>
+        <h2 
+          class="logo inspectable" 
+          data-tag="h2" 
+          data-css-class="logo"
+          data-category="Brand Component"
+          data-related-css="logo,navbar,header"
+        >
+          CodeLens HTML
+        </h2>
+
+        <div 
+          class="nav-links inspectable" 
+          data-tag="div" 
+          data-css-class="nav-links"
+          data-category="Page Navigation"
+          data-related-css="nav-links,navbar,header"
+        >
+
+          <label 
+            for="homePage" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="nav-links"
+            data-category="Navigation Tab"
+            data-related-css="nav-links,page"
+          >
+            Home
+          </label>
+
+          <label 
+            for="formPage" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="nav-links"
+            data-category="Navigation Tab"
+            data-related-css="nav-links,page,form-card,input,btn"
+          >
+            Form
+          </label>
+
+          <label 
+            for="tablePage" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="nav-links"
+            data-category="Navigation Tab"
+            data-related-css="nav-links,page,table-wrapper,table,th,td"
+          >
+            Table
+          </label>
+
+          <label 
+            for="aboutPage" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="nav-links"
+            data-category="Navigation Tab"
+            data-related-css="nav-links,page,about-grid,about-card,about-card-img"
+          >
+            About CSS
+          </label>
+
         </div>
 
-        <div class="theme-switcher inspectable" data-tag="div" data-css-class="theme-switcher">
-          <label for="theme-light" class="inspectable" data-tag="label" data-css-class="theme-switcher">Light</label>
-          <label for="theme-dark" class="inspectable" data-tag="label" data-css-class="theme-switcher">Dark</label>
-          <label for="theme-blue" class="inspectable" data-tag="label" data-css-class="theme-switcher">Blue</label>
-          <label for="theme-green" class="inspectable" data-tag="label" data-css-class="theme-switcher">Green</label>
+        <div 
+          class="theme-switcher inspectable" 
+          data-tag="div" 
+          data-css-class="theme-switcher"
+          data-category="Theme Switcher"
+          data-related-css="theme-switcher,header,navbar"
+        >
+
+          <label 
+            for="theme-light" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="theme-switcher" 
+            data-category="Theme Button" 
+            data-related-css="theme-switcher"
+          >
+            Light
+          </label>
+
+          <label 
+            for="theme-dark" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="theme-switcher" 
+            data-category="Theme Button" 
+            data-related-css="theme-switcher"
+          >
+            Dark
+          </label>
+
+          <label 
+            for="theme-blue" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="theme-switcher" 
+            data-category="Theme Button" 
+            data-related-css="theme-switcher"
+          >
+            Blue
+          </label>
+
+          <label 
+            for="theme-green" 
+            class="inspectable" 
+            data-tag="label" 
+            data-css-class="theme-switcher" 
+            data-category="Theme Button" 
+            data-related-css="theme-switcher"
+          >
+            Green
+          </label>
+
         </div>
 
       </nav>
     </header>
 
-    <main class="layout inspectable" data-tag="main" data-css-class="layout">
+    <main 
+      class="layout inspectable" 
+      data-tag="main" 
+      data-css-class="layout"
+      data-category="Main Layout"
+      data-related-css="layout,content,page,inspector"
+    >
 
-      <section class="content inspectable" data-tag="section" data-css-class="content">
+      <section 
+        class="content inspectable" 
+        data-tag="section" 
+        data-css-class="content"
+        data-category="Content Area"
+        data-related-css="content,page,layout"
+      >
 
-        <article class="page home inspectable" data-tag="article" data-css-class="page">
-          <h1 class="inspectable" data-tag="h1" data-css-class="h1">Modern HTML + CSS Website</h1>
+        <article 
+          class="page home inspectable" 
+          data-tag="article" 
+          data-css-class="page"
+          data-category="Home Page Component"
+          data-related-css="page,h1,p,btn"
+        >
 
-          <p class="inspectable" data-tag="p" data-css-class="p">
+          <h1 
+            class="inspectable" 
+            data-tag="h1" 
+            data-css-class="h1"
+            data-category="Typography Component"
+            data-related-css="h1,p,page"
+          >
+            Modern HTML + CSS Website
+          </h1>
+
+          <p 
+            class="inspectable" 
+            data-tag="p" 
+            data-css-class="p"
+            data-category="Typography Component"
+            data-related-css="p,h1,page"
+          >
             A responsive webpage with navbar, themes, pages, form, table, and component inspector.
           </p>
 
-          <button class="btn inspectable" data-tag="button" data-css-class="btn">
+          <button 
+            class="btn inspectable" 
+            data-tag="button" 
+            data-css-class="btn"
+            data-category="Button Component"
+            data-related-css="btn,page"
+          >
             Get Started
           </button>
+
         </article>
 
-        <article class="page form-section inspectable" data-tag="article" data-css-class="page">
-          <h2 class="inspectable" data-tag="h2" data-css-class="h2">Form Section</h2>
+        <article 
+          class="page form-section inspectable" 
+          data-tag="article" 
+          data-css-class="page"
+          data-category="Form Page Component"
+          data-related-css="page,form-card,input,btn,h2"
+        >
 
-          <form class="form-card inspectable" data-tag="form" data-css-class="form-card">
+          <h2 
+            class="inspectable" 
+            data-tag="h2" 
+            data-css-class="h2"
+            data-category="Typography Component"
+            data-related-css="h2,page,form-card"
+          >
+            Form Section
+          </h2>
 
-            <input class="inspectable" type="text" placeholder="Enter your name" required
-              data-tag="input-text" data-css-class="input">
+          <form 
+            class="form-card inspectable" 
+            data-tag="form" 
+            data-css-class="form-card"
+            data-category="Form Component"
+            data-related-css="form-card,input,btn"
+          >
 
-            <input class="inspectable" type="email" placeholder="Enter your email" required
-              data-tag="input-email" data-css-class="input">
+            <input 
+              class="inspectable" 
+              type="text" 
+              placeholder="Enter your name" 
+              required
+              data-tag="input-text" 
+              data-css-class="input"
+              data-category="Form Input"
+              data-related-css="form-card,input"
+            >
 
-            <input class="inspectable" type="date" required
-              data-tag="input-date" data-css-class="input">
+            <input 
+              class="inspectable" 
+              type="email" 
+              placeholder="Enter your email" 
+              required
+              data-tag="input-email" 
+              data-css-class="input"
+              data-category="Form Input"
+              data-related-css="form-card,input"
+            >
 
-            <button class="btn inspectable" type="submit" data-tag="button" data-css-class="btn">
+            <input 
+              class="inspectable" 
+              type="date" 
+              required
+              data-tag="input-date" 
+              data-css-class="input"
+              data-category="Date Control"
+              data-related-css="form-card,input"
+            >
+
+            <button 
+              class="btn inspectable" 
+              type="submit" 
+              data-tag="button" 
+              data-css-class="btn"
+              data-category="Form Button"
+              data-related-css="form-card,btn,input"
+            >
               Submit
             </button>
 
           </form>
         </article>
 
-        <article class="page table-section inspectable" data-tag="article" data-css-class="page">
-          <h2 class="inspectable" data-tag="h2" data-css-class="h2">Table Section</h2>
+        <article 
+          class="page table-section inspectable" 
+          data-tag="article" 
+          data-css-class="page"
+          data-category="Table Page Component"
+          data-related-css="page,search-box,table-wrapper,table,thead,tbody,tr,th,td"
+        >
 
-          <input class="search-box inspectable" type="search" placeholder="Search users..."
-            data-tag="input-search" data-css-class="search-box">
+          <h2 
+            class="inspectable" 
+            data-tag="h2" 
+            data-css-class="h2"
+            data-category="Typography Component"
+            data-related-css="h2,page,table"
+          >
+            Table Section
+          </h2>
 
-          <div class="table-wrapper inspectable" data-tag="div" data-css-class="table-wrapper">
+          <input 
+            class="search-box inspectable" 
+            type="search" 
+            placeholder="Search users..."
+            data-tag="input-search" 
+            data-css-class="search-box"
+            data-category="Search Component"
+            data-related-css="search-box,input,table-wrapper,table"
+          >
 
-            <table class="inspectable" data-tag="table" data-css-class="table">
-              <thead class="inspectable" data-tag="thead" data-css-class="thead">
-                <tr class="inspectable" data-tag="tr" data-css-class="tr">
-                  <th class="inspectable" data-tag="th" data-css-class="th">Name</th>
-                  <th class="inspectable" data-tag="th" data-css-class="th">Role</th>
-                  <th class="inspectable" data-tag="th" data-css-class="th">Location</th>
+          <div 
+            class="table-wrapper inspectable" 
+            data-tag="div" 
+            data-css-class="table-wrapper"
+            data-category="Responsive Table Wrapper"
+            data-related-css="table-wrapper,table,thead,tbody,tr,th,td"
+          >
+
+            <table 
+              class="inspectable" 
+              data-tag="table" 
+              data-css-class="table"
+              data-category="Table Component"
+              data-related-css="table-wrapper,table,thead,tbody,tr,th,td"
+            >
+
+              <thead 
+                class="inspectable" 
+                data-tag="thead" 
+                data-css-class="thead"
+                data-category="Table Header Group"
+                data-related-css="table,thead,tr,th"
+              >
+
+                <tr 
+                  class="inspectable" 
+                  data-tag="tr" 
+                  data-css-class="tr"
+                  data-category="Table Row"
+                  data-related-css="table,tr,th,td"
+                >
+                  <th 
+                    class="inspectable" 
+                    data-tag="th" 
+                    data-css-class="th" 
+                    data-category="Table Header Cell" 
+                    data-related-css="table,thead,tr,th"
+                  >
+                    Name
+                  </th>
+
+                  <th 
+                    class="inspectable" 
+                    data-tag="th" 
+                    data-css-class="th" 
+                    data-category="Table Header Cell" 
+                    data-related-css="table,thead,tr,th"
+                  >
+                    Role
+                  </th>
+
+                  <th 
+                    class="inspectable" 
+                    data-tag="th" 
+                    data-css-class="th" 
+                    data-category="Table Header Cell" 
+                    data-related-css="table,thead,tr,th"
+                  >
+                    Location
+                  </th>
                 </tr>
+
               </thead>
 
-              <tbody class="inspectable" data-tag="tbody" data-css-class="tbody">
-                <tr class="inspectable" data-tag="tr" data-css-class="tr">
-                  <td class="inspectable" data-tag="td" data-css-class="td">Anirudh</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">React Developer</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">Chennai</td>
+              <tbody 
+                class="inspectable" 
+                data-tag="tbody" 
+                data-css-class="tbody"
+                data-category="Table Body Group"
+                data-related-css="table,tbody,tr,td"
+              >
+
+                <tr 
+                  class="inspectable" 
+                  data-tag="tr" 
+                  data-css-class="tr" 
+                  data-category="Table Row" 
+                  data-related-css="table,tbody,tr,td"
+                >
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Anirudh</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">React Developer</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Chennai</td>
                 </tr>
 
-                <tr class="inspectable" data-tag="tr" data-css-class="tr">
-                  <td class="inspectable" data-tag="td" data-css-class="td">Ravi</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">UI Designer</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">Bangalore</td>
+                <tr 
+                  class="inspectable" 
+                  data-tag="tr" 
+                  data-css-class="tr" 
+                  data-category="Table Row" 
+                  data-related-css="table,tbody,tr,td"
+                >
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Ravi</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">UI Designer</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Bangalore</td>
                 </tr>
 
-                <tr class="inspectable" data-tag="tr" data-css-class="tr">
-                  <td class="inspectable" data-tag="td" data-css-class="td">Kumar</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">Full Stack Developer</td>
-                  <td class="inspectable" data-tag="td" data-css-class="td">Hyderabad</td>
+                <tr 
+                  class="inspectable" 
+                  data-tag="tr" 
+                  data-css-class="tr" 
+                  data-category="Table Row" 
+                  data-related-css="table,tbody,tr,td"
+                >
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Kumar</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Full Stack Developer</td>
+                  <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Hyderabad</td>
                 </tr>
+
               </tbody>
             </table>
 
           </div>
         </article>
 
-        <article class="page about-section inspectable" data-tag="article" data-css-class="page">
-          <h2 class="inspectable" data-tag="h2" data-css-class="h2">About CSS</h2>
+        <article 
+          class="page about-section inspectable" 
+          data-tag="article" 
+          data-css-class="page"
+          data-category="About CSS Page"
+          data-related-css="page,about-grid,about-card,about-card-img,h2,h3,p"
+        >
 
-          <div class="about-grid inspectable" data-tag="div" data-css-class="about-grid">
+          <h2 
+            class="inspectable" 
+            data-tag="h2" 
+            data-css-class="h2"
+            data-category="Typography Component"
+            data-related-css="h2,page,about-grid"
+          >
+            About CSS
+          </h2>
 
-            <section class="about-card inspectable" data-tag="section" data-css-class="about-card">
-              <img class="inspectable" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600"
-                alt="CSS code" data-tag="img" data-css-class="about-card-img">
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3">What is CSS?</h3>
-              <p class="inspectable" data-tag="p" data-css-class="p">
+          <div 
+            class="about-grid inspectable" 
+            data-tag="div" 
+            data-css-class="about-grid"
+            data-category="Card Grid Component"
+            data-related-css="about-grid,about-card,about-card-img,h3,p"
+          >
+
+            <section 
+              class="about-card inspectable" 
+              data-tag="section" 
+              data-css-class="about-card" 
+              data-category="CSS Learning Card" 
+              data-related-css="about-card,about-card-img,h3,p"
+            >
+              <img 
+                class="inspectable" 
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600" 
+                alt="CSS code" 
+                data-tag="img" 
+                data-css-class="about-card-img" 
+                data-category="Card Image" 
+                data-related-css="about-card-img,about-card"
+              >
+
+              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
+                What is CSS?
+              </h3>
+
+              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
                 CSS means Cascading Style Sheets. It styles HTML elements using colors, spacing, layout, fonts, and responsiveness.
               </p>
             </section>
 
-            <section class="about-card inspectable" data-tag="section" data-css-class="about-card">
-              <img class="inspectable" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
-                alt="Web development" data-tag="img" data-css-class="about-card-img">
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3">Why use CSS?</h3>
-              <p class="inspectable" data-tag="p" data-css-class="p">
+            <section 
+              class="about-card inspectable" 
+              data-tag="section" 
+              data-css-class="about-card" 
+              data-category="CSS Learning Card" 
+              data-related-css="about-card,about-card-img,h3,p"
+            >
+              <img 
+                class="inspectable" 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" 
+                alt="Web development" 
+                data-tag="img" 
+                data-css-class="about-card-img" 
+                data-category="Card Image" 
+                data-related-css="about-card-img,about-card"
+              >
+
+              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
+                Why use CSS?
+              </h3>
+
+              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
                 CSS separates design from structure. It makes webpages clean, reusable, responsive, and visually professional.
               </p>
             </section>
 
-            <section class="about-card inspectable" data-tag="section" data-css-class="about-card">
-              <img class="inspectable" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
-                alt="Laptop code" data-tag="img" data-css-class="about-card-img">
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3">How CSS works?</h3>
-              <p class="inspectable" data-tag="p" data-css-class="p">
+            <section 
+              class="about-card inspectable" 
+              data-tag="section" 
+              data-css-class="about-card" 
+              data-category="CSS Learning Card" 
+              data-related-css="about-card,about-card-img,h3,p"
+            >
+              <img 
+                class="inspectable" 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" 
+                alt="Laptop code" 
+                data-tag="img" 
+                data-css-class="about-card-img" 
+                data-category="Card Image" 
+                data-related-css="about-card-img,about-card"
+              >
+
+              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
+                How CSS works?
+              </h3>
+
+              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
                 CSS selects HTML elements using selectors like class, id, element name, and applies property-value rules.
               </p>
             </section>
 
-            <section class="about-card inspectable" data-tag="section" data-css-class="about-card">
-              <img class="inspectable" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600"
-                alt="Frontend code" data-tag="img" data-css-class="about-card-img">
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3">When to use CSS?</h3>
-              <p class="inspectable" data-tag="p" data-css-class="p">
+            <section 
+              class="about-card inspectable" 
+              data-tag="section" 
+              data-css-class="about-card" 
+              data-category="CSS Learning Card" 
+              data-related-css="about-card,about-card-img,h3,p"
+            >
+              <img 
+                class="inspectable" 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600" 
+                alt="Frontend code" 
+                data-tag="img" 
+                data-css-class="about-card-img" 
+                data-category="Card Image" 
+                data-related-css="about-card-img,about-card"
+              >
+
+              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
+                When to use CSS?
+              </h3>
+
+              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
                 Use CSS whenever you need layout, colors, animations, responsive design, typography, or better UI presentation.
               </p>
             </section>
@@ -167,763 +569,134 @@
 
       </section>
 
-      <aside class="inspector inspectable" data-tag="aside" data-css-class="inspector">
-        <h2 class="inspectable" data-tag="h2" data-css-class="h2">Component Inspector</h2>
+      <aside 
+        class="inspector inspectable" 
+        data-tag="aside" 
+        data-css-class="inspector"
+        data-category="Inspector Panel"
+        data-related-css="inspector,output-box"
+      >
 
-        <p class="inspectable" data-tag="p" data-css-class="p">
-          Click any element to inspect its HTML and CSS explanation.
+        <h2 
+          class="inspectable" 
+          data-tag="h2" 
+          data-css-class="h2" 
+          data-category="Inspector Heading" 
+          data-related-css="h2,inspector"
+        >
+          Component Inspector
+        </h2>
+
+        <p 
+          class="inspectable" 
+          data-tag="p" 
+          data-css-class="p" 
+          data-category="Inspector Description" 
+          data-related-css="p,inspector"
+        >
+          Click any element to inspect its HTML tag, component category, and related CSS styles.
         </p>
 
-        <div class="output-box">
-          <h3>HTML Inspector</h3>
-          <pre id="htmlInspector">Click any component</pre>
+        <div class="selected-category">
+          <span>Selected Category</span>
+          <strong id="categoryBadge">Click a component</strong>
         </div>
 
         <div class="output-box">
-          <h3>CSS Inspector</h3>
-          <pre id="cssInspector">Click any component</pre>
+          <h3>Clicked Component</h3>
+          <pre id="componentInspector">Click any component</pre>
         </div>
+
+        <div class="output-box">
+          <h3>Related CSS Styles</h3>
+          <pre id="relatedCssInspector">Click any component</pre>
+        </div>
+
       </aside>
 
     </main>
 
-    <footer class="footer inspectable" data-tag="footer" data-css-class="footer">
-      <p class="inspectable" data-tag="p" data-css-class="p">© 2026 WebInspect. All rights reserved.</p>
+    <footer 
+      class="footer inspectable" 
+      data-tag="footer" 
+      data-css-class="footer"
+      data-category="Footer Component"
+      data-related-css="footer,p"
+    >
+      <p 
+        class="inspectable" 
+        data-tag="p" 
+        data-css-class="p" 
+        data-category="Footer Text" 
+        data-related-css="footer,p"
+      >
+        © 2026 CodeLens HTML. All rights reserved.
+      </p>
     </footer>
 
   </div>
 
   <script>
     const htmlDocs = {
-      div: `
-WHAT:
-The <div> tag is a generic container.
-
-WHY:
-It groups content or layout blocks.
-
-WHEN:
-Use it when no semantic HTML tag fits the purpose.
-
-HOW:
-It wraps other elements and can be styled with CSS classes.`,
-
-      header: `
-WHAT:
-The <header> tag represents the top section of a page.
-
-WHY:
-It gives structure to branding, title, and navigation content.
-
-WHEN:
-Use it at the top of a webpage or section.
-
-HOW:
-It contains elements like logo, nav, headings, and theme controls.`,
-
-      nav: `
-WHAT:
-The <nav> tag defines navigation content.
-
-WHY:
-It tells the browser and developers that this area contains navigation.
-
-WHEN:
-Use it for menus, page links, or tab controls.
-
-HOW:
-It wraps navigation items such as labels, links, or buttons.`,
-
-      main: `
-WHAT:
-The <main> tag contains the primary page content.
-
-WHY:
-It improves semantic structure and accessibility.
-
-WHEN:
-Use it once per page for the main unique content.
-
-HOW:
-It wraps the core sections of the webpage.`,
-
-      section: `
-WHAT:
-The <section> tag groups related content.
-
-WHY:
-It creates meaningful content blocks.
-
-WHEN:
-Use it when content belongs under one topic.
-
-HOW:
-It wraps related headings, paragraphs, cards, or components.`,
-
-      article: `
-WHAT:
-The <article> tag represents independent content.
-
-WHY:
-It makes content reusable and semantically meaningful.
-
-WHEN:
-Use it for cards, pages, posts, or standalone content blocks.
-
-HOW:
-It wraps content that can make sense on its own.`,
-
-      aside: `
-WHAT:
-The <aside> tag contains supporting content.
-
-WHY:
-It separates secondary content from main content.
-
-WHEN:
-Use it for sidebars, notes, inspectors, or extra information.
-
-HOW:
-It sits beside or around main content as a support panel.`,
-
-      footer: `
-WHAT:
-The <footer> tag represents the bottom section.
-
-WHY:
-It gives the page a closing area.
-
-WHEN:
-Use it for copyright, links, or contact details.
-
-HOW:
-It wraps final page information at the bottom.`,
-
-      label: `
-WHAT:
-The <label> tag describes or activates a form control.
-
-WHY:
-It improves usability and accessibility.
-
-WHEN:
-Use it with inputs, radio buttons, checkboxes, or controls.
-
-HOW:
-The for attribute connects the label to an element id.`,
-
-      h1: `
-WHAT:
-The <h1> tag is the main heading.
-
-WHY:
-It defines the main topic of the page.
-
-WHEN:
-Use it once for the most important title.
-
-HOW:
-Browsers treat it as a top-level heading.`,
-
-      h2: `
-WHAT:
-The <h2> tag is a secondary heading.
-
-WHY:
-It separates major sections.
-
-WHEN:
-Use it for section titles.
-
-HOW:
-It creates hierarchy below h1.`,
-
-      h3: `
-WHAT:
-The <h3> tag is a subsection heading.
-
-WHY:
-It organizes smaller content areas.
-
-WHEN:
-Use it inside cards or subsections.
-
-HOW:
-It creates hierarchy below h2.`,
-
-      p: `
-WHAT:
-The <p> tag represents paragraph text.
-
-WHY:
-It improves text structure and readability.
-
-WHEN:
-Use it for normal written content.
-
-HOW:
-It wraps text into a paragraph block.`,
-
-      form: `
-WHAT:
-The <form> tag groups user inputs.
-
-WHY:
-It collects user data.
-
-WHEN:
-Use it for login, signup, contact, or submission sections.
-
-HOW:
-It wraps input fields and submit buttons.`,
-
-      button: `
-WHAT:
-The <button> tag creates a clickable control.
-
-WHY:
-It allows users to perform actions.
-
-WHEN:
-Use it for submit, save, open, close, or navigation actions.
-
-HOW:
-It can submit forms or trigger JavaScript events.`,
-
-      "input-text": `
-WHAT:
-The text input accepts normal text.
-
-WHY:
-It collects names, titles, or short text values.
-
-WHEN:
-Use it when users need to type plain text.
-
-HOW:
-type="text" creates a single-line text field.`,
-
-      "input-email": `
-WHAT:
-The email input accepts email addresses.
-
-WHY:
-It provides native email validation.
-
-WHEN:
-Use it for email fields.
-
-HOW:
-type="email" checks email format before form submission.`,
-
-      "input-date": `
-WHAT:
-The date input opens a native date picker.
-
-WHY:
-It makes date selection easier.
-
-WHEN:
-Use it for DOB, appointment, schedule, or booking dates.
-
-HOW:
-type="date" provides browser-level date control.`,
-
-      "input-search": `
-WHAT:
-The search input is for search text.
-
-WHY:
-It gives semantic meaning to search fields.
-
-WHEN:
-Use it above tables, lists, or filterable content.
-
-HOW:
-type="search" creates a search-specific input field.`,
-
-      table: `
-WHAT:
-The <table> tag displays structured data.
-
-WHY:
-It organizes data into rows and columns.
-
-WHEN:
-Use it for reports, users, records, or comparisons.
-
-HOW:
-It works with thead, tbody, tr, th, and td.`,
-
-      thead: `
-WHAT:
-The <thead> tag groups table headings.
-
-WHY:
-It separates header rows from data rows.
-
-WHEN:
-Use it at the top of a table.
-
-HOW:
-It contains tr and th elements.`,
-
-      tbody: `
-WHAT:
-The <tbody> tag groups table data rows.
-
-WHY:
-It separates real data from headings.
-
-WHEN:
-Use it for the main table records.
-
-HOW:
-It contains tr and td elements.`,
-
-      tr: `
-WHAT:
-The <tr> tag creates a table row.
-
-WHY:
-It groups cells horizontally.
-
-WHEN:
-Use it inside thead or tbody.
-
-HOW:
-It contains th or td cells.`,
-
-      th: `
-WHAT:
-The <th> tag creates a header cell.
-
-WHY:
-It identifies column titles.
-
-WHEN:
-Use it inside table header rows.
-
-HOW:
-It displays bold/important table headings.`,
-
-      td: `
-WHAT:
-The <td> tag creates a data cell.
-
-WHY:
-It holds normal table values.
-
-WHEN:
-Use it inside table body rows.
-
-HOW:
-It displays one value inside a row.`,
-
-      img: `
-WHAT:
-The <img> tag embeds an image.
-
-WHY:
-It adds visual content.
-
-WHEN:
-Use it for illustrations, banners, cards, or icons.
-
-HOW:
-The src attribute loads the image and alt describes it.`
+      div: "A generic container used to group layout blocks or content when no specific semantic tag is required.",
+      header: "Represents the top section of a webpage, usually containing branding, navigation, and controls.",
+      nav: "Defines the navigation area of the webpage, such as page links, tabs, or menu controls.",
+      main: "Contains the main content of the webpage. It should usually appear once per page.",
+      section: "Groups related content into a meaningful section.",
+      article: "Represents independent content that can stand on its own, such as a page block, card, or post.",
+      aside: "Represents supporting content, such as a sidebar, inspector, notes, or related information.",
+      footer: "Represents the bottom section of a webpage, commonly used for copyright or additional links.",
+      label: "Connects text to a form control. In this project, labels are used to switch tabs and themes.",
+      h1: "The main heading of the page. It represents the highest-level title.",
+      h2: "A secondary heading used for major sections.",
+      h3: "A smaller heading used inside cards or subsections.",
+      p: "Represents paragraph text used for normal descriptions or explanations.",
+      form: "Groups input fields and buttons for collecting user information.",
+      button: "Creates a clickable action element such as Submit or Get Started.",
+      "input-text": "A single-line field used to collect normal text.",
+      "input-email": "A single-line field used to collect and validate email addresses.",
+      "input-date": "A date picker field provided by the browser.",
+      "input-search": "A search-specific input field used for filtering or searching content.",
+      table: "Displays structured data in rows and columns.",
+      thead: "Groups the header area of a table.",
+      tbody: "Groups the main body rows of a table.",
+      tr: "Creates one row inside a table.",
+      th: "Creates a header cell inside a table row.",
+      td: "Creates a normal data cell inside a table row.",
+      img: "Embeds an image into the webpage."
     };
 
     const cssDocs = {
-      app: `
-WHAT:
-.app is the full webpage wrapper.
-
-WHY:
-It keeps header, main content, and footer organized.
-
-WHEN:
-Use it when building a complete page layout.
-
-HOW:
-It uses CSS Grid with grid-template-rows: auto 1fr auto.`,
-
-      header: `
-WHAT:
-.header styles the top page area.
-
-WHY:
-It creates a strong branded top section.
-
-WHEN:
-Use it for logo, navbar, and theme controls.
-
-HOW:
-It uses background color, text color, and padding.`,
-
-      navbar: `
-WHAT:
-.navbar controls navigation layout.
-
-WHY:
-It aligns logo, links, and theme buttons.
-
-WHEN:
-Use it for website navigation bars.
-
-HOW:
-It uses Flexbox with space-between alignment.`,
-
-      logo: `
-WHAT:
-.logo styles the website name.
-
-WHY:
-It makes the brand identity stand out.
-
-WHEN:
-Use it for website or app titles.
-
-HOW:
-It increases font size and font weight.`,
-
-      "nav-links": `
-WHAT:
-.nav-links styles page navigation controls.
-
-WHY:
-It keeps navigation clean and clickable.
-
-WHEN:
-Use it for tabs or navbar links.
-
-HOW:
-It uses Flexbox, gap, wrapping, padding, border-radius, and hover effects.`,
-
-      "theme-switcher": `
-WHAT:
-.theme-switcher styles theme buttons.
-
-WHY:
-It lets users switch page color themes.
-
-WHEN:
-Use it when your site supports multiple themes.
-
-HOW:
-Labels activate hidden radio inputs, and CSS :has() changes variables.`,
-
-      layout: `
-WHAT:
-.layout creates the main two-column structure.
-
-WHY:
-It separates content from the inspector panel.
-
-WHEN:
-Use it for dashboard or learning layouts.
-
-HOW:
-It uses CSS Grid with one flexible column and one fixed sidebar column.`,
-
-      content: `
-WHAT:
-.content wraps all main page sections.
-
-WHY:
-It keeps Home, Form, Table, and About grouped.
-
-WHEN:
-Use it when multiple sections share one content area.
-
-HOW:
-It acts as a structural wrapper inside .layout.`,
-
-      page: `
-WHAT:
-.page styles each switchable page.
-
-WHY:
-It gives every page a modern card look.
-
-WHEN:
-Use it for tabs, pages, or section views.
-
-HOW:
-It is hidden by default and shown using CSS :has().`,
-
-      h1: `
-WHAT:
-h1 CSS styles the main heading.
-
-WHY:
-It creates strong visual hierarchy.
-
-WHEN:
-Use it for the main page title.
-
-HOW:
-The shared h1, h2, h3 selector applies clean bottom spacing.`,
-
-      h2: `
-WHAT:
-h2 CSS styles secondary headings.
-
-WHY:
-It separates sections clearly.
-
-WHEN:
-Use it for section titles.
-
-HOW:
-The shared heading selector applies margin-bottom.`,
-
-      h3: `
-WHAT:
-h3 CSS styles card headings.
-
-WHY:
-It organizes smaller content blocks.
-
-WHEN:
-Use it inside cards or subsections.
-
-HOW:
-The shared heading selector applies consistent spacing.`,
-
-      p: `
-WHAT:
-p CSS styles paragraph text.
-
-WHY:
-It improves readability.
-
-WHEN:
-Use it for normal descriptions.
-
-HOW:
-It applies line-height and bottom margin.`,
-
-      btn: `
-WHAT:
-.btn styles action buttons.
-
-WHY:
-It makes buttons consistent and modern.
-
-WHEN:
-Use it for actions like Submit or Get Started.
-
-HOW:
-It applies background, color, padding, border-radius, cursor, font-weight, and hover opacity.`,
-
-      "form-card": `
-WHAT:
-.form-card styles the form layout.
-
-WHY:
-It keeps input fields evenly spaced.
-
-WHEN:
-Use it for forms with multiple fields.
-
-HOW:
-It uses CSS Grid and gap.`,
-
-      input: `
-WHAT:
-input CSS styles form fields.
-
-WHY:
-It makes text, email, date, and search fields consistent.
-
-WHEN:
-Use it for user input controls.
-
-HOW:
-It applies width, padding, border, radius, background, and text color.`,
-
-      "search-box": `
-WHAT:
-.search-box styles the search field.
-
-WHY:
-It separates the search box from the table.
-
-WHEN:
-Use it above lists or tables.
-
-HOW:
-It adds margin-bottom and inherits global input styling.`,
-
-      "table-wrapper": `
-WHAT:
-.table-wrapper wraps wide tables.
-
-WHY:
-It prevents layout breaking on small screens.
-
-WHEN:
-Use it around responsive tables.
-
-HOW:
-It applies overflow-x: auto.`,
-
-      table: `
-WHAT:
-table CSS styles the full table.
-
-WHY:
-It makes rows and columns readable.
-
-WHEN:
-Use it for structured data.
-
-HOW:
-It sets width, border-collapse, and min-width.`,
-
-      thead: `
-WHAT:
-thead CSS represents the table header area.
-
-WHY:
-It separates headings from body rows.
-
-WHEN:
-Use it at the top of tables.
-
-HOW:
-It works with th styling for header presentation.`,
-
-      tbody: `
-WHAT:
-tbody CSS represents the table body area.
-
-WHY:
-It groups the actual table records.
-
-WHEN:
-Use it for table data rows.
-
-HOW:
-It contains tr and td elements.`,
-
-      tr: `
-WHAT:
-tr CSS represents row structure.
-
-WHY:
-It groups cells into one row.
-
-WHEN:
-Use it inside thead or tbody.
-
-HOW:
-It contains th or td cells.`,
-
-      th: `
-WHAT:
-th CSS styles table header cells.
-
-WHY:
-It makes column names stand out.
-
-WHEN:
-Use it for table headings.
-
-HOW:
-It applies padding, border, background, and white text.`,
-
-      td: `
-WHAT:
-td CSS styles table data cells.
-
-WHY:
-It keeps table data readable.
-
-WHEN:
-Use it for normal table values.
-
-HOW:
-It applies padding, bottom border, and left alignment.`,
-
-      "about-grid": `
-WHAT:
-.about-grid controls About card layout.
-
-WHY:
-It displays multiple cards neatly.
-
-WHEN:
-Use it for card collections.
-
-HOW:
-It uses CSS Grid with two columns and gap.`,
-
-      "about-card": `
-WHAT:
-.about-card styles each CSS info card.
-
-WHY:
-It separates each topic visually.
-
-WHEN:
-Use it for learning cards or feature cards.
-
-HOW:
-It applies border, padding, radius, and background.`,
-
-      "about-card-img": `
-WHAT:
-.about-card img styles card images.
-
-WHY:
-It keeps all images equal and clean.
-
-WHEN:
-Use it for images inside cards.
-
-HOW:
-It applies full width, fixed height, object-fit, border-radius, and margin-bottom.`,
-
-      inspector: `
-WHAT:
-.inspector styles the side panel.
-
-WHY:
-It keeps clicked-element details visible.
-
-WHEN:
-Use it for documentation, dashboards, or learning tools.
-
-HOW:
-It uses sticky positioning, border, padding, radius, and shadow.`,
-
-      "output-box": `
-WHAT:
-.output-box styles inspector result boxes.
-
-WHY:
-It separates HTML and CSS explanation sections.
-
-WHEN:
-Use it for grouped output content.
-
-HOW:
-It applies background, border, padding, margin, and radius.`,
-
-      footer: `
-WHAT:
-.footer styles the bottom page area.
-
-WHY:
-It gives the page a clean ending.
-
-WHEN:
-Use it for copyright or footer links.
-
-HOW:
-It applies background, color, padding, and center alignment.`
+      app: "Creates the full-page structure and keeps the header, main area, and footer organized using CSS Grid.",
+      header: "Styles the top area of the page with background color, text color, and spacing.",
+      navbar: "Uses Flexbox to align the logo, navigation links, and theme controls in one responsive row.",
+      logo: "Styles the website name with larger size and bold weight so the brand stands out.",
+      "nav-links": "Styles the page navigation labels with spacing, rounded corners, hover states, and flexible wrapping.",
+      "theme-switcher": "Styles the theme buttons and works with hidden radio inputs to switch the page theme.",
+      layout: "Creates the main two-column structure with the content area on the left and inspector panel on the right.",
+      content: "Wraps all switchable page sections such as Home, Form, Table, and About CSS.",
+      page: "Styles each page section as a card and hides inactive sections until their radio tab is selected.",
+      h1: "Applies consistent spacing for the main heading and helps create visual hierarchy.",
+      h2: "Applies spacing for secondary section headings.",
+      h3: "Applies spacing for smaller card-level headings.",
+      p: "Improves paragraph readability using line height and bottom spacing.",
+      btn: "Creates a reusable button style with background color, padding, rounded corners, white text, and hover effect.",
+      "form-card": "Uses CSS Grid to stack form fields vertically with clean spacing between inputs.",
+      input: "Styles form fields with full width, padding, border, border radius, background color, and text color.",
+      "search-box": "Adds spacing below the search field and visually separates it from the table.",
+      "table-wrapper": "Wraps the table and allows horizontal scrolling on smaller screens to prevent layout breaking.",
+      table: "Controls table width, border collapsing, and minimum width for better structure and responsiveness.",
+      thead: "Represents the table header area and works with table header cell styling.",
+      tbody: "Represents the main table data area and groups all normal table rows.",
+      tr: "Represents a table row and groups header cells or data cells horizontally.",
+      th: "Styles table header cells with background color, white text, padding, and clear visual emphasis.",
+      td: "Styles table data cells with padding, bottom border, and left alignment.",
+      "about-grid": "Uses CSS Grid to arrange CSS learning cards in a responsive two-column layout.",
+      "about-card": "Styles each learning card with border, padding, rounded corners, and a clean background.",
+      "about-card-img": "Styles card images with full width, fixed height, object-fit cover, rounded corners, and bottom spacing.",
+      inspector: "Styles the side inspector panel with sticky positioning, border, padding, rounded corners, shadow, and scroll behavior.",
+      "output-box": "Styles each inspector result block with background color, border, padding, and rounded corners.",
+      footer: "Styles the bottom section of the page with background color, centered text, and spacing."
     };
 
     document.querySelectorAll(".inspectable").forEach((element) => {
@@ -932,19 +705,43 @@ It applies background, color, padding, and center alignment.`
 
         const tag = this.dataset.tag || this.tagName.toLowerCase();
         const cssClass = this.dataset.cssClass || this.classList[0] || "No CSS class";
+        const category = this.dataset.category || "General Component";
 
-        const htmlInfo = htmlDocs[tag] || "No HTML documentation available.";
-        const cssInfo = cssDocs[cssClass] || "No CSS documentation available.";
+        const htmlDescription =
+          htmlDocs[tag] || "No HTML description available for this element.";
 
-        document.getElementById("htmlInspector").textContent =
-`TAG: <${tag}>
+        const relatedCss = this.dataset.relatedCss
+          ? this.dataset.relatedCss.split(",")
+          : [cssClass];
 
-${htmlInfo}`;
+        document.getElementById("categoryBadge").textContent = category;
 
-        document.getElementById("cssInspector").textContent =
-`CLASS: .${cssClass}
+        document.getElementById("componentInspector").textContent =
+`HTML TAG: <${tag}>
 
-${cssInfo}`;
+CATEGORY: ${category}
+
+DESCRIPTION:
+${htmlDescription}
+
+PRIMARY CSS:
+.${cssClass}`;
+
+        let relatedOutput = "";
+
+        relatedCss.forEach((cssKey, index) => {
+          const cleanKey = cssKey.trim();
+          const description =
+            cssDocs[cleanKey] || "No CSS description available for this style.";
+
+          relatedOutput += `${index + 1}. .${cleanKey}
+${description}
+
+`;
+        });
+
+        document.getElementById("relatedCssInspector").textContent =
+          relatedOutput || "No related CSS styles available.";
       });
     });
   </script>
