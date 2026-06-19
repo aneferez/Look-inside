@@ -3,68 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeLens HTML</title>
+  <title>Look-Inside</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- Theme Controls -->
   <input type="radio" name="theme" id="theme-light" checked hidden>
   <input type="radio" name="theme" id="theme-dark" hidden>
   <input type="radio" name="theme" id="theme-blue" hidden>
   <input type="radio" name="theme" id="theme-green" hidden>
 
+  <!-- Page Controls -->
   <input type="radio" name="page" id="homePage" checked hidden>
   <input type="radio" name="page" id="formPage" hidden>
   <input type="radio" name="page" id="tablePage" hidden>
-  <input type="radio" name="page" id="aboutPage" hidden>
 
-  <div 
-    class="app inspectable" 
-    data-tag="div" 
+  <div
+    class="app inspectable"
+    data-tag="div"
     data-css-class="app"
     data-category="Application Layout"
-    data-related-css="app,layout,content,page,inspector,footer"
+    data-related-css="app,layout,content,page,floating-inspector,footer"
   >
 
-    <header 
-      class="header inspectable" 
-      data-tag="header" 
+    <header
+      class="header inspectable"
+      data-tag="header"
       data-css-class="header"
       data-category="Header Component"
       data-related-css="header,navbar,logo,nav-links,theme-switcher"
     >
 
-      <nav 
-        class="navbar inspectable" 
-        data-tag="nav" 
+      <nav
+        class="navbar inspectable"
+        data-tag="nav"
         data-css-class="navbar"
         data-category="Navigation Component"
         data-related-css="header,navbar,logo,nav-links,theme-switcher"
       >
 
-        <h2 
-          class="logo inspectable" 
-          data-tag="h2" 
+        <h2
+          class="logo inspectable"
+          data-tag="h2"
           data-css-class="logo"
           data-category="Brand Component"
           data-related-css="logo,navbar,header"
         >
-          CodeLens HTML
+          Look-Inside
         </h2>
 
-        <div 
-          class="nav-links inspectable" 
-          data-tag="div" 
+        <div
+          class="nav-links inspectable"
+          data-tag="div"
           data-css-class="nav-links"
           data-category="Page Navigation"
           data-related-css="nav-links,navbar,header"
         >
-
-          <label 
-            for="homePage" 
-            class="inspectable" 
-            data-tag="label" 
+          <label
+            for="homePage"
+            class="inspectable"
+            data-tag="label"
             data-css-class="nav-links"
             data-category="Navigation Tab"
             data-related-css="nav-links,page"
@@ -72,10 +72,10 @@
             Home
           </label>
 
-          <label 
-            for="formPage" 
-            class="inspectable" 
-            data-tag="label" 
+          <label
+            for="formPage"
+            class="inspectable"
+            data-tag="label"
             data-css-class="nav-links"
             data-category="Navigation Tab"
             data-related-css="nav-links,page,form-card,input,btn"
@@ -83,114 +83,101 @@
             Form
           </label>
 
-          <label 
-            for="tablePage" 
-            class="inspectable" 
-            data-tag="label" 
+          <label
+            for="tablePage"
+            class="inspectable"
+            data-tag="label"
             data-css-class="nav-links"
             data-category="Navigation Tab"
-            data-related-css="nav-links,page,table-wrapper,table,th,td"
+            data-related-css="nav-links,page,table-wrapper,table,thead,tbody,tr,th,td"
           >
             Table
           </label>
-
-          <label 
-            for="aboutPage" 
-            class="inspectable" 
-            data-tag="label" 
-            data-css-class="nav-links"
-            data-category="Navigation Tab"
-            data-related-css="nav-links,page,about-grid,about-card,about-card-img"
-          >
-            About CSS
-          </label>
-
         </div>
 
-        <div 
-          class="theme-switcher inspectable" 
-          data-tag="div" 
+        <div
+          class="theme-switcher inspectable"
+          data-tag="div"
           data-css-class="theme-switcher"
           data-category="Theme Switcher"
           data-related-css="theme-switcher,header,navbar"
         >
-
-          <label 
-            for="theme-light" 
-            class="inspectable" 
-            data-tag="label" 
-            data-css-class="theme-switcher" 
-            data-category="Theme Button" 
+          <label
+            for="theme-light"
+            class="inspectable"
+            data-tag="label"
+            data-css-class="theme-switcher"
+            data-category="Theme Button"
             data-related-css="theme-switcher"
           >
             Light
           </label>
 
-          <label 
-            for="theme-dark" 
-            class="inspectable" 
-            data-tag="label" 
-            data-css-class="theme-switcher" 
-            data-category="Theme Button" 
+          <label
+            for="theme-dark"
+            class="inspectable"
+            data-tag="label"
+            data-css-class="theme-switcher"
+            data-category="Theme Button"
             data-related-css="theme-switcher"
           >
             Dark
           </label>
 
-          <label 
-            for="theme-blue" 
-            class="inspectable" 
-            data-tag="label" 
-            data-css-class="theme-switcher" 
-            data-category="Theme Button" 
+          <label
+            for="theme-blue"
+            class="inspectable"
+            data-tag="label"
+            data-css-class="theme-switcher"
+            data-category="Theme Button"
             data-related-css="theme-switcher"
           >
             Blue
           </label>
 
-          <label 
-            for="theme-green" 
-            class="inspectable" 
-            data-tag="label" 
-            data-css-class="theme-switcher" 
-            data-category="Theme Button" 
+          <label
+            for="theme-green"
+            class="inspectable"
+            data-tag="label"
+            data-css-class="theme-switcher"
+            data-category="Theme Button"
             data-related-css="theme-switcher"
           >
             Green
           </label>
-
         </div>
 
       </nav>
     </header>
 
-    <main 
-      class="layout inspectable" 
-      data-tag="main" 
+    <main
+      class="layout inspectable"
+      data-tag="main"
       data-css-class="layout"
       data-category="Main Layout"
-      data-related-css="layout,content,page,inspector"
+      data-related-css="layout,content,page"
     >
 
-      <section 
-        class="content inspectable" 
-        data-tag="section" 
+      <section
+        class="content inspectable"
+        data-tag="section"
         data-css-class="content"
         data-category="Content Area"
         data-related-css="content,page,layout"
       >
 
-        <article 
-          class="page home inspectable" 
-          data-tag="article" 
+        <!-- Home Page -->
+        <article
+          class="page home inspectable"
+          data-tag="article"
           data-css-class="page"
           data-category="Home Page Component"
           data-related-css="page,h1,p,btn"
         >
 
-          <h1 
-            class="inspectable" 
-            data-tag="h1" 
+          <h1
+            class="inspectable"
+            data-tag="h1"
             data-css-class="h1"
             data-category="Typography Component"
             data-related-css="h1,p,page"
@@ -198,19 +185,19 @@
             Modern HTML + CSS Website
           </h1>
 
-          <p 
-            class="inspectable" 
-            data-tag="p" 
+          <p
+            class="inspectable"
+            data-tag="p"
             data-css-class="p"
             data-category="Typography Component"
             data-related-css="p,h1,page"
           >
-            A responsive webpage with navbar, themes, pages, form, table, and component inspector.
+            A responsive webpage with navbar, themes, form, table, and component inspector.
           </p>
 
-          <button 
-            class="btn inspectable" 
-            data-tag="button" 
+          <button
+            class="btn inspectable"
+            data-tag="button"
             data-css-class="btn"
             data-category="Button Component"
             data-related-css="btn,page"
@@ -220,17 +207,18 @@
 
         </article>
 
-        <article 
-          class="page form-section inspectable" 
-          data-tag="article" 
+        <!-- Form Page -->
+        <article
+          class="page form-section inspectable"
+          data-tag="article"
           data-css-class="page"
           data-category="Form Page Component"
           data-related-css="page,form-card,input,btn,h2"
         >
 
-          <h2 
-            class="inspectable" 
-            data-tag="h2" 
+          <h2
+            class="inspectable"
+            data-tag="h2"
             data-css-class="h2"
             data-category="Typography Component"
             data-related-css="h2,page,form-card"
@@ -238,50 +226,50 @@
             Form Section
           </h2>
 
-          <form 
-            class="form-card inspectable" 
-            data-tag="form" 
+          <form
+            class="form-card inspectable"
+            data-tag="form"
             data-css-class="form-card"
             data-category="Form Component"
             data-related-css="form-card,input,btn"
           >
 
-            <input 
-              class="inspectable" 
-              type="text" 
-              placeholder="Enter your name" 
+            <input
+              class="inspectable"
+              type="text"
+              placeholder="Enter your name"
               required
-              data-tag="input-text" 
+              data-tag="input-text"
               data-css-class="input"
               data-category="Form Input"
               data-related-css="form-card,input"
             >
 
-            <input 
-              class="inspectable" 
-              type="email" 
-              placeholder="Enter your email" 
+            <input
+              class="inspectable"
+              type="email"
+              placeholder="Enter your email"
               required
-              data-tag="input-email" 
+              data-tag="input-email"
               data-css-class="input"
               data-category="Form Input"
               data-related-css="form-card,input"
             >
 
-            <input 
-              class="inspectable" 
-              type="date" 
+            <input
+              class="inspectable"
+              type="date"
               required
-              data-tag="input-date" 
+              data-tag="input-date"
               data-css-class="input"
               data-category="Date Control"
               data-related-css="form-card,input"
             >
 
-            <button 
-              class="btn inspectable" 
-              type="submit" 
-              data-tag="button" 
+            <button
+              class="btn inspectable"
+              type="submit"
+              data-tag="button"
               data-css-class="btn"
               data-category="Form Button"
               data-related-css="form-card,btn,input"
@@ -292,17 +280,18 @@
           </form>
         </article>
 
-        <article 
-          class="page table-section inspectable" 
-          data-tag="article" 
+        <!-- Table Page -->
+        <article
+          class="page table-section inspectable"
+          data-tag="article"
           data-css-class="page"
           data-category="Table Page Component"
           data-related-css="page,search-box,table-wrapper,table,thead,tbody,tr,th,td"
         >
 
-          <h2 
-            class="inspectable" 
-            data-tag="h2" 
+          <h2
+            class="inspectable"
+            data-tag="h2"
             data-css-class="h2"
             data-category="Typography Component"
             data-related-css="h2,page,table"
@@ -310,330 +299,133 @@
             Table Section
           </h2>
 
-          <input 
-            class="search-box inspectable" 
-            type="search" 
+          <input
+            class="search-box inspectable"
+            type="search"
             placeholder="Search users..."
-            data-tag="input-search" 
+            data-tag="input-search"
             data-css-class="search-box"
             data-category="Search Component"
             data-related-css="search-box,input,table-wrapper,table"
           >
 
-          <div 
-            class="table-wrapper inspectable" 
-            data-tag="div" 
+          <div
+            class="table-wrapper inspectable"
+            data-tag="div"
             data-css-class="table-wrapper"
             data-category="Responsive Table Wrapper"
             data-related-css="table-wrapper,table,thead,tbody,tr,th,td"
           >
 
-            <table 
-              class="inspectable" 
-              data-tag="table" 
+            <table
+              class="inspectable"
+              data-tag="table"
               data-css-class="table"
               data-category="Table Component"
               data-related-css="table-wrapper,table,thead,tbody,tr,th,td"
             >
 
-              <thead 
-                class="inspectable" 
-                data-tag="thead" 
+              <thead
+                class="inspectable"
+                data-tag="thead"
                 data-css-class="thead"
                 data-category="Table Header Group"
                 data-related-css="table,thead,tr,th"
               >
-
-                <tr 
-                  class="inspectable" 
-                  data-tag="tr" 
+                <tr
+                  class="inspectable"
+                  data-tag="tr"
                   data-css-class="tr"
                   data-category="Table Row"
                   data-related-css="table,tr,th,td"
                 >
-                  <th 
-                    class="inspectable" 
-                    data-tag="th" 
-                    data-css-class="th" 
-                    data-category="Table Header Cell" 
-                    data-related-css="table,thead,tr,th"
-                  >
-                    Name
-                  </th>
-
-                  <th 
-                    class="inspectable" 
-                    data-tag="th" 
-                    data-css-class="th" 
-                    data-category="Table Header Cell" 
-                    data-related-css="table,thead,tr,th"
-                  >
-                    Role
-                  </th>
-
-                  <th 
-                    class="inspectable" 
-                    data-tag="th" 
-                    data-css-class="th" 
-                    data-category="Table Header Cell" 
-                    data-related-css="table,thead,tr,th"
-                  >
-                    Location
-                  </th>
+                  <th class="inspectable" data-tag="th" data-css-class="th" data-category="Table Header Cell" data-related-css="table,thead,tr,th">Name</th>
+                  <th class="inspectable" data-tag="th" data-css-class="th" data-category="Table Header Cell" data-related-css="table,thead,tr,th">Role</th>
+                  <th class="inspectable" data-tag="th" data-css-class="th" data-category="Table Header Cell" data-related-css="table,thead,tr,th">Location</th>
                 </tr>
-
               </thead>
 
-              <tbody 
-                class="inspectable" 
-                data-tag="tbody" 
+              <tbody
+                class="inspectable"
+                data-tag="tbody"
                 data-css-class="tbody"
                 data-category="Table Body Group"
                 data-related-css="table,tbody,tr,td"
               >
-
-                <tr 
-                  class="inspectable" 
-                  data-tag="tr" 
-                  data-css-class="tr" 
-                  data-category="Table Row" 
-                  data-related-css="table,tbody,tr,td"
-                >
+                <tr class="inspectable" data-tag="tr" data-css-class="tr" data-category="Table Row" data-related-css="table,tbody,tr,td">
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Anirudh</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">React Developer</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Chennai</td>
                 </tr>
 
-                <tr 
-                  class="inspectable" 
-                  data-tag="tr" 
-                  data-css-class="tr" 
-                  data-category="Table Row" 
-                  data-related-css="table,tbody,tr,td"
-                >
+                <tr class="inspectable" data-tag="tr" data-css-class="tr" data-category="Table Row" data-related-css="table,tbody,tr,td">
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Ravi</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">UI Designer</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Bangalore</td>
                 </tr>
 
-                <tr 
-                  class="inspectable" 
-                  data-tag="tr" 
-                  data-css-class="tr" 
-                  data-category="Table Row" 
-                  data-related-css="table,tbody,tr,td"
-                >
+                <tr class="inspectable" data-tag="tr" data-css-class="tr" data-category="Table Row" data-related-css="table,tbody,tr,td">
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Kumar</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Full Stack Developer</td>
                   <td class="inspectable" data-tag="td" data-css-class="td" data-category="Table Data Cell" data-related-css="table,tr,td">Hyderabad</td>
                 </tr>
-
               </tbody>
+
             </table>
-
-          </div>
-        </article>
-
-        <article 
-          class="page about-section inspectable" 
-          data-tag="article" 
-          data-css-class="page"
-          data-category="About CSS Page"
-          data-related-css="page,about-grid,about-card,about-card-img,h2,h3,p"
-        >
-
-          <h2 
-            class="inspectable" 
-            data-tag="h2" 
-            data-css-class="h2"
-            data-category="Typography Component"
-            data-related-css="h2,page,about-grid"
-          >
-            About CSS
-          </h2>
-
-          <div 
-            class="about-grid inspectable" 
-            data-tag="div" 
-            data-css-class="about-grid"
-            data-category="Card Grid Component"
-            data-related-css="about-grid,about-card,about-card-img,h3,p"
-          >
-
-            <section 
-              class="about-card inspectable" 
-              data-tag="section" 
-              data-css-class="about-card" 
-              data-category="CSS Learning Card" 
-              data-related-css="about-card,about-card-img,h3,p"
-            >
-              <img 
-                class="inspectable" 
-                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600" 
-                alt="CSS code" 
-                data-tag="img" 
-                data-css-class="about-card-img" 
-                data-category="Card Image" 
-                data-related-css="about-card-img,about-card"
-              >
-
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
-                What is CSS?
-              </h3>
-
-              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
-                CSS means Cascading Style Sheets. It styles HTML elements using colors, spacing, layout, fonts, and responsiveness.
-              </p>
-            </section>
-
-            <section 
-              class="about-card inspectable" 
-              data-tag="section" 
-              data-css-class="about-card" 
-              data-category="CSS Learning Card" 
-              data-related-css="about-card,about-card-img,h3,p"
-            >
-              <img 
-                class="inspectable" 
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" 
-                alt="Web development" 
-                data-tag="img" 
-                data-css-class="about-card-img" 
-                data-category="Card Image" 
-                data-related-css="about-card-img,about-card"
-              >
-
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
-                Why use CSS?
-              </h3>
-
-              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
-                CSS separates design from structure. It makes webpages clean, reusable, responsive, and visually professional.
-              </p>
-            </section>
-
-            <section 
-              class="about-card inspectable" 
-              data-tag="section" 
-              data-css-class="about-card" 
-              data-category="CSS Learning Card" 
-              data-related-css="about-card,about-card-img,h3,p"
-            >
-              <img 
-                class="inspectable" 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" 
-                alt="Laptop code" 
-                data-tag="img" 
-                data-css-class="about-card-img" 
-                data-category="Card Image" 
-                data-related-css="about-card-img,about-card"
-              >
-
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
-                How CSS works?
-              </h3>
-
-              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
-                CSS selects HTML elements using selectors like class, id, element name, and applies property-value rules.
-              </p>
-            </section>
-
-            <section 
-              class="about-card inspectable" 
-              data-tag="section" 
-              data-css-class="about-card" 
-              data-category="CSS Learning Card" 
-              data-related-css="about-card,about-card-img,h3,p"
-            >
-              <img 
-                class="inspectable" 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600" 
-                alt="Frontend code" 
-                data-tag="img" 
-                data-css-class="about-card-img" 
-                data-category="Card Image" 
-                data-related-css="about-card-img,about-card"
-              >
-
-              <h3 class="inspectable" data-tag="h3" data-css-class="h3" data-category="Card Heading" data-related-css="h3,about-card">
-                When to use CSS?
-              </h3>
-
-              <p class="inspectable" data-tag="p" data-css-class="p" data-category="Card Description" data-related-css="p,about-card">
-                Use CSS whenever you need layout, colors, animations, responsive design, typography, or better UI presentation.
-              </p>
-            </section>
-
           </div>
         </article>
 
       </section>
-
-      <aside 
-        class="inspector inspectable" 
-        data-tag="aside" 
-        data-css-class="inspector"
-        data-category="Inspector Panel"
-        data-related-css="inspector,output-box"
-      >
-
-        <h2 
-          class="inspectable" 
-          data-tag="h2" 
-          data-css-class="h2" 
-          data-category="Inspector Heading" 
-          data-related-css="h2,inspector"
-        >
-          Component Inspector
-        </h2>
-
-        <p 
-          class="inspectable" 
-          data-tag="p" 
-          data-css-class="p" 
-          data-category="Inspector Description" 
-          data-related-css="p,inspector"
-        >
-          Click any element to inspect its HTML tag, component category, and related CSS styles.
-        </p>
-
-        <div class="selected-category">
-          <span>Selected Category</span>
-          <strong id="categoryBadge">Click a component</strong>
-        </div>
-
-        <div class="output-box">
-          <h3>Clicked Component</h3>
-          <pre id="componentInspector">Click any component</pre>
-        </div>
-
-        <div class="output-box">
-          <h3>Related CSS Styles</h3>
-          <pre id="relatedCssInspector">Click any component</pre>
-        </div>
-
-      </aside>
-
     </main>
 
-    <footer 
-      class="footer inspectable" 
-      data-tag="footer" 
+    <footer
+      class="footer inspectable"
+      data-tag="footer"
       data-css-class="footer"
       data-category="Footer Component"
       data-related-css="footer,p"
     >
-      <p 
-        class="inspectable" 
-        data-tag="p" 
-        data-css-class="p" 
-        data-category="Footer Text" 
-        data-related-css="footer,p"
-      >
-        © 2026 CodeLens HTML. All rights reserved.
+      <p class="inspectable" data-tag="p" data-css-class="p" data-category="Footer Text" data-related-css="footer,p">
+        © 2026 Look-Inside. All rights reserved.
       </p>
     </footer>
 
+  </div>
+
+  <!-- Floating Popup Inspector -->
+  <div class="floating-inspector" id="floatingInspector">
+    <div class="popup-header">
+      <div class="popup-avatar">CL</div>
+
+      <div>
+        <h3 id="popupTitle">Component</h3>
+        <span id="popupCategory">Category</span>
+      </div>
+
+      <button class="popup-close" id="closePopup" type="button">×</button>
+    </div>
+
+    <div class="popup-body">
+      <div class="popup-section">
+        <strong>HTML Tag</strong>
+        <p id="popupTag">Click a component</p>
+      </div>
+
+      <div class="popup-section">
+        <strong>Description</strong>
+        <p id="popupDescription">Click any component to inspect it.</p>
+      </div>
+
+      <div class="popup-section">
+        <strong>Primary CSS Selector</strong>
+        <p id="popupPrimaryCss">No CSS selected</p>
+      </div>
+
+      <div class="popup-section">
+        <strong>Related CSS Selectors</strong>
+        <ul id="popupRelatedCss"></ul>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -644,12 +436,10 @@
       main: "Contains the main content of the webpage. It should usually appear once per page.",
       section: "Groups related content into a meaningful section.",
       article: "Represents independent content that can stand on its own, such as a page block, card, or post.",
-      aside: "Represents supporting content, such as a sidebar, inspector, notes, or related information.",
       footer: "Represents the bottom section of a webpage, commonly used for copyright or additional links.",
       label: "Connects text to a form control. In this project, labels are used to switch tabs and themes.",
       h1: "The main heading of the page. It represents the highest-level title.",
       h2: "A secondary heading used for major sections.",
-      h3: "A smaller heading used inside cards or subsections.",
       p: "Represents paragraph text used for normal descriptions or explanations.",
       form: "Groups input fields and buttons for collecting user information.",
       button: "Creates a clickable action element such as Submit or Get Started.",
@@ -662,8 +452,7 @@
       tbody: "Groups the main body rows of a table.",
       tr: "Creates one row inside a table.",
       th: "Creates a header cell inside a table row.",
-      td: "Creates a normal data cell inside a table row.",
-      img: "Embeds an image into the webpage."
+      td: "Creates a normal data cell inside a table row."
     };
 
     const cssDocs = {
@@ -673,12 +462,11 @@
       logo: "Styles the website name with larger size and bold weight so the brand stands out.",
       "nav-links": "Styles the page navigation labels with spacing, rounded corners, hover states, and flexible wrapping.",
       "theme-switcher": "Styles the theme buttons and works with hidden radio inputs to switch the page theme.",
-      layout: "Creates the main two-column structure with the content area on the left and inspector panel on the right.",
-      content: "Wraps all switchable page sections such as Home, Form, Table, and About CSS.",
+      layout: "Controls the main content width, spacing, and layout flow.",
+      content: "Wraps all switchable page sections such as Home, Form, and Table.",
       page: "Styles each page section as a card and hides inactive sections until their radio tab is selected.",
       h1: "Applies consistent spacing for the main heading and helps create visual hierarchy.",
       h2: "Applies spacing for secondary section headings.",
-      h3: "Applies spacing for smaller card-level headings.",
       p: "Improves paragraph readability using line height and bottom spacing.",
       btn: "Creates a reusable button style with background color, padding, rounded corners, white text, and hover effect.",
       "form-card": "Uses CSS Grid to stack form fields vertically with clean spacing between inputs.",
@@ -691,13 +479,240 @@
       tr: "Represents a table row and groups header cells or data cells horizontally.",
       th: "Styles table header cells with background color, white text, padding, and clear visual emphasis.",
       td: "Styles table data cells with padding, bottom border, and left alignment.",
-      "about-grid": "Uses CSS Grid to arrange CSS learning cards in a responsive two-column layout.",
-      "about-card": "Styles each learning card with border, padding, rounded corners, and a clean background.",
-      "about-card-img": "Styles card images with full width, fixed height, object-fit cover, rounded corners, and bottom spacing.",
-      inspector: "Styles the side inspector panel with sticky positioning, border, padding, rounded corners, shadow, and scroll behavior.",
-      "output-box": "Styles each inspector result block with background color, border, padding, and rounded corners.",
+      "floating-inspector": "Creates the popup inspector card that appears near the clicked component.",
       footer: "Styles the bottom section of the page with background color, centered text, and spacing."
     };
+
+    const cssCode = {
+      app: `.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}`,
+
+      header: `.header,
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+}`,
+
+      navbar: `.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}`,
+
+      logo: `.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}`,
+
+      "nav-links": `.nav-links,
+.theme-switcher {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-links label,
+.theme-switcher label {
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  transition: 0.3s;
+}
+
+.nav-links label:hover,
+.theme-switcher label:hover {
+  background: rgba(255, 255, 255, 0.15);
+}`,
+
+      "theme-switcher": `.theme-switcher {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}`,
+
+      layout: `.layout {
+  width: min(1200px, 94%);
+  margin: 2rem auto;
+  display: block;
+}`,
+
+      content: `.content {
+  width: 100%;
+}`,
+
+      page: `.page {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+body:has(#homePage:checked) .home,
+body:has(#formPage:checked) .form-section,
+body:has(#tablePage:checked) .table-section {
+  display: block;
+}`,
+
+      h1: `h1,
+h2 {
+  margin-bottom: 1rem;
+}`,
+
+      h2: `h1,
+h2 {
+  margin-bottom: 1rem;
+}`,
+
+      p: `p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}`,
+
+      btn: `.btn {
+  border: none;
+  background: var(--accent);
+  color: white;
+  padding: 0.9rem 1.3rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}`,
+
+      "form-card": `.form-card {
+  display: grid;
+  gap: 1rem;
+}`,
+
+      input: `input {
+  width: 100%;
+  padding: 0.95rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}`,
+
+      "search-box": `.search-box {
+  margin-bottom: 1rem;
+}`,
+
+      "table-wrapper": `.table-wrapper {
+  overflow-x: auto;
+}`,
+
+      table: `table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}`,
+
+      thead: `thead {
+  display: table-header-group;
+}`,
+
+      tbody: `tbody {
+  display: table-row-group;
+}`,
+
+      tr: `tr {
+  display: table-row;
+}`,
+
+      th: `th {
+  background: var(--accent);
+  color: white;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}`,
+
+      td: `td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}`,
+
+      "floating-inspector": `.floating-inspector {
+  position: absolute;
+  width: min(420px, calc(100vw - 24px));
+  max-height: 520px;
+  overflow-y: auto;
+  background: #4a4a4a;
+  color: #f8fafc;
+  border: 2px solid #a855f7;
+  border-radius: 0.45rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+  display: none;
+}
+
+.floating-inspector.show {
+  display: block;
+}`,
+
+      footer: `.footer {
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}`
+    };
+
+    const cssSelectorLabels = {
+      app: ".app",
+      header: ".header",
+      navbar: ".navbar",
+      logo: ".logo",
+      "nav-links": ".nav-links",
+      "theme-switcher": ".theme-switcher",
+      layout: ".layout",
+      content: ".content",
+      page: ".page",
+      h1: "h1",
+      h2: "h2",
+      p: "p",
+      btn: ".btn",
+      "form-card": ".form-card",
+      input: "input",
+      "search-box": ".search-box",
+      "table-wrapper": ".table-wrapper",
+      table: "table",
+      thead: "thead",
+      tbody: "tbody",
+      tr: "tr",
+      th: "th",
+      td: "td",
+      "floating-inspector": ".floating-inspector",
+      footer: ".footer"
+    };
+
+    const popup = document.getElementById("floatingInspector");
+    const closePopup = document.getElementById("closePopup");
+
+    const popupTitle = document.getElementById("popupTitle");
+    const popupCategory = document.getElementById("popupCategory");
+    const popupTag = document.getElementById("popupTag");
+    const popupDescription = document.getElementById("popupDescription");
+    const popupPrimaryCss = document.getElementById("popupPrimaryCss");
+    const popupRelatedCss = document.getElementById("popupRelatedCss");
 
     document.querySelectorAll(".inspectable").forEach((element) => {
       element.addEventListener("click", function (event) {
@@ -714,35 +729,99 @@
           ? this.dataset.relatedCss.split(",")
           : [cssClass];
 
-        document.getElementById("categoryBadge").textContent = category;
+        popupTitle.textContent = `<${tag}>`;
+        popupCategory.textContent = category;
+        popupTag.textContent = `<${tag}>`;
+        popupDescription.textContent = htmlDescription;
+        popupPrimaryCss.textContent = cssSelectorLabels[cssClass] || `.${cssClass}`;
 
-        document.getElementById("componentInspector").textContent =
-`HTML TAG: <${tag}>
+        popupRelatedCss.innerHTML = "";
 
-CATEGORY: ${category}
-
-DESCRIPTION:
-${htmlDescription}
-
-PRIMARY CSS:
-.${cssClass}`;
-
-        let relatedOutput = "";
-
-        relatedCss.forEach((cssKey, index) => {
+        relatedCss.forEach((cssKey) => {
           const cleanKey = cssKey.trim();
+
           const description =
             cssDocs[cleanKey] || "No CSS description available for this style.";
 
-          relatedOutput += `${index + 1}. .${cleanKey}
-${description}
+          const selector =
+            cssSelectorLabels[cleanKey] || `.${cleanKey}`;
 
-`;
+          const code =
+            cssCode[cleanKey] || "No CSS code available for this selector.";
+
+          const li = document.createElement("li");
+
+          const selectorEl = document.createElement("span");
+          selectorEl.className = "css-selector";
+          selectorEl.textContent = selector;
+
+          const descriptionEl = document.createElement("span");
+          descriptionEl.className = "css-description";
+          descriptionEl.textContent = description;
+
+          const codeTitle = document.createElement("span");
+          codeTitle.className = "css-code-title";
+          codeTitle.textContent = "Code used:";
+
+          const codeEl = document.createElement("pre");
+          codeEl.className = "css-code";
+          codeEl.textContent = code;
+
+          li.appendChild(selectorEl);
+          li.appendChild(descriptionEl);
+          li.appendChild(codeTitle);
+          li.appendChild(codeEl);
+
+          popupRelatedCss.appendChild(li);
         });
 
-        document.getElementById("relatedCssInspector").textContent =
-          relatedOutput || "No related CSS styles available.";
+        showPopupNearElement(this);
       });
+    });
+
+    function showPopupNearElement(target) {
+      popup.classList.add("show");
+
+      const rect = target.getBoundingClientRect();
+
+      const popupWidth = popup.offsetWidth;
+      const popupHeight = popup.offsetHeight;
+
+      let left = rect.right + window.scrollX + 14;
+      let top = rect.top + window.scrollY;
+
+      const pageWidth = document.documentElement.clientWidth;
+      const pageHeight = document.documentElement.clientHeight;
+
+      if (left + popupWidth > pageWidth - 20) {
+        left = rect.left + window.scrollX - popupWidth - 14;
+      }
+
+      if (left < 12) {
+        left = 12;
+      }
+
+      if (top + popupHeight > window.scrollY + pageHeight - 20) {
+        top = window.scrollY + pageHeight - popupHeight - 20;
+      }
+
+      if (top < window.scrollY + 12) {
+        top = window.scrollY + 12;
+      }
+
+      popup.style.left = `${left}px`;
+      popup.style.top = `${top}px`;
+    }
+
+    closePopup.addEventListener("click", function (event) {
+      event.stopPropagation();
+      popup.classList.remove("show");
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        popup.classList.remove("show");
+      }
     });
   </script>
 
